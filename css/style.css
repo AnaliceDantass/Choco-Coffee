@@ -1,1 +1,52 @@
+body{
+    background-color: black;
+}
+
+nav .sobre{
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+nav .sobre p{
+    float: left;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+.nav-links{
+    color: aliceblue;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    line-height: 80px;
+    padding: 0px 70px;
+    position: fixed;
+
+}
+
+nav ul{
+    float: right;
+
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 0px 13px;
+    transition: 0.5s;
+
+}
+
+nav ul li a:hover{
+    color:darkred
+}
+
 
