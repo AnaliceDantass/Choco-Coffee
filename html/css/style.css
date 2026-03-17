@@ -55,3 +55,24 @@ nav ul li a:hover{
     color:darkred
 }
 
+.area {
+    display: flex;
+    float: left; 
+}
+
+.input-search {
+    width: 100px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    border-radius: 100px;
+    border: none;
+    transition: all 0.4s ease;
+    background-color: black;
+}
+
+.input-search:focus {
+    width: 400px;
+    outline: none;
+    padding: 10px;
+}
+
