@@ -61,13 +61,14 @@ nav ul li a:hover{
 }
 
 .input-search {
-    width: 100px;
+    width: 80px;
     padding: 10px;
     background-repeat: no-repeat;
     border-radius: 100px;
     border: none;
     transition: all 0.4s ease;
     background-color: black;
+    color: aliceblue;
 }
 
 .input-search:focus {
