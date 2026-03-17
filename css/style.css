@@ -1,7 +1,16 @@
 body{
     background-color: black;
     background: radial-gradient(circle, #570E02 30%, black 90%);
+    font-family: 'DrukenHour', sans-serif;
+}
 
+@font-face {
+  font-family: 'DrukenHour';
+  src: url('fonts/DrukenHour.woff2') format('woff2'),
+       url('fonts/DrukenHour.woff') format('woff'),
+       url('fonts/DrukenHour.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 nav .sobre{
@@ -20,15 +29,14 @@ nav .sobre p{
     margin-top: 20px;
 }
 
-.nav-links{
-    color: aliceblue;
-    width: 100%;
-    height: 80px;
-    background-color: black;
-    line-height: 80px;
-    padding: 0px 70px;
-    position: fixed;
 
+nav .sobre a{
+    float: left;
+    color: aliceblue;
+    text-transform: uppercase;
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 nav ul{
