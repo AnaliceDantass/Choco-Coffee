@@ -35,7 +35,10 @@ nav .home a {
 }
 
 .search-wrapper {
-    position: relative;
+    display: flex;
+    margin-top: 35px;
+    margin-left: auto;
+    transform: translateY(-50%);
     width: 300px; 
     flex-shrink: 0; 
 }
@@ -64,7 +67,6 @@ nav .home a {
 }
 
 .search-input:focus {
-    border-color: #570E02;
     background-color: rgba(0, 0, 0, 0.9);
     box-shadow: 0 0 10px rgba(87, 14, 2, 0.3);
 }
@@ -127,16 +129,12 @@ nav .home a {
 
 @media screen and (max-width: 768px) {
     nav {
-        flex-direction: column;
+        flex-direction: row-reverse;
         padding: 15px;
     }
-    
-    .search-wrapper {
-        width: 100%;
-    }
-    
+        
     .nav-menu {
-        justify-content: center;
+        justify-content: right;
         width: 100%;
     }
 }
