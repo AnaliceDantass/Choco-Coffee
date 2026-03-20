@@ -15,32 +15,35 @@ body {
     font-style: normal;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 40px;
-    flex-wrap: wrap;
-    gap: 20px;
+nav.container-fluid {
+    padding: 15px 40px !important;
+    background: transparent !important;
 }
 
-nav .home a {
+.home a {
     color: aliceblue;
     font-size: 30px;
     font-weight: 800;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     text-decoration: none;
-    font-family: 'DrukenHour', 'Arial', sans-serif; 
+    font-family: 'DrukenHour', 'Arial', sans-serif;
+    transition: all 0.3s ease;
+    margin-right: auto;
+}
+
+.home a:hover {
+    color: #570E02;
 }
 
 .search-wrapper {
-    display: flex;
-    margin-top: 35px;
+    position: relative;
+    width: 100%;
+    max-width: 300px;
     margin-left: auto;
-    transform: translateY(-50%);
-    width: 300px; 
-    flex-shrink: 0; 
+    outline: none;
+    border: none;
+
 }
 
 .search-icon {
@@ -55,20 +58,23 @@ nav .home a {
 
 .search-input {
     width: 100%;
+    margin-left: auto;
     padding: 10px 15px 10px 40px !important;
-    border-radius: 100px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 100px !important;
+    border: 1px solid transparent !important;
     height: 40px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    color: aliceblue !important;
     font-size: 14px;
     outline: none;
     transition: all 0.3s ease;
 }
 
 .search-input:focus {
-    background-color: rgba(0, 0, 0, 0.9);
-    box-shadow: 0 0 10px rgba(87, 14, 2, 0.3);
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    border-color: #570E02 !important;
+    box-shadow: 0 0 10px rgba(87, 14, 2, 0.3) !important;
+    outline: none !important;
 }
 
 .search-input::placeholder {
@@ -92,6 +98,7 @@ nav .home a {
     margin: 0;
     padding: 0;
     list-style: none;
+    justify-content: space-between;
 }
 
 .nav-menu li {
@@ -102,7 +109,7 @@ nav .home a {
 .nav-menu li a {
     color: aliceblue;
     text-decoration: none;
-    font-size: 20px; 
+    font-size: 20px;
     padding: 10px;
     transition: all 0.3s ease;
     display: flex;
@@ -128,13 +135,32 @@ nav .home a {
 }
 
 @media screen and (max-width: 768px) {
-    nav {
-        flex-direction: row-reverse;
-        padding: 15px;
+    nav.container-fluid {
+        padding: 15px !important;
     }
-        
+    
     .nav-menu {
-        justify-content: right;
-        width: 100%;
+        justify-content: flex-end;
+    }
+    
+    .search-wrapper {
+        margin: 10px auto;
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .home a {
+        font-size: 24px;
+    }
+    
+    .nav-menu li a {
+        font-size: 18px;
+        padding: 8px;
+    }
+    
+    .nav-menu .separator {
+        font-size: 14px;
+        margin: 0 3px;
     }
 }
