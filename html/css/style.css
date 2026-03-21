@@ -1,18 +1,11 @@
 body {
     background-color: black;
-    background: radial-gradient(circle, #570E02 30%, black 90%);
+    background: radial-gradient(circle at center, #5b0000 20%, #3e0000 ,black 80%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
-}
-
-@font-face {
-    font-family: 'DrukenHour';
-    src: url('fonts/DrukenHour.woff2') format('woff2'),
-         url('fonts/DrukenHour.woff') format('woff'),
-         url('fonts/DrukenHour.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'Six Caps', sans-serif;
 }
 
 nav.container-fluid {
@@ -22,25 +15,26 @@ nav.container-fluid {
 
 .home a {
     color: aliceblue;
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 800;
-    letter-spacing: 1.5px;
+    letter-spacing: 3px;
     text-transform: uppercase;
     text-decoration: none;
-    font-family: 'DrukenHour', 'Arial', sans-serif;
+    font-family: 'Six Caps', sans-serif;
     transition: all 0.3s ease;
     margin-right: auto;
+    margin-top: auto;
 }
 
 .home a:hover {
-    color: #570E02;
+    color: #b90000;
 }
 
 .search-wrapper {
     position: relative;
     width: 100%;
     max-width: 300px;
-    margin-left: auto;
+    margin-left: 87%;
     outline: none;
     border: none;
 
@@ -118,7 +112,7 @@ nav.container-fluid {
 }
 
 .nav-menu li a:hover {
-    color: #570E02;
+    color: #b90000;
     transform: scale(1.1);
 }
 
