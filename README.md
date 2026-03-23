@@ -2,6 +2,6 @@
 A loja que reconhece a moda como um ato de resistência.
 
 # Sobre o projeto
-Bee Punk é uma loja de roupas da subcultura punk criada com o objetivo de reconhecer a subcultura e o movimento punk em si, compreendendo a influência dele não apenas na moda mas também nos moldes da contemporaneidade. 
+Bee Punk é uma loja de roupas de subculturas alternativas criada com o objetivo de reconhecer as subculturas e os movimentos em si, compreendendo a influência deles não apenas na moda mas também nos moldes da contemporaneidade. 
 
 
