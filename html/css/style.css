@@ -274,3 +274,26 @@ nav.container-fluid {
     letter-spacing: 0.5px;
 }
 
+.page-section {
+    min-height: calc(100vh - 90px);
+}
+
+.section-panel {
+    color: aliceblue;
+    background: rgba(0, 0, 0, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+}
+
+.section-panel h1 {
+    font-size: 56px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.section-panel p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
